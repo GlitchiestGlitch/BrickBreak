@@ -194,6 +194,23 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 
 	@Override
 	public void keyReleased(KeyEvent e) {
+		player.setVelocity(0);
+		if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+			play = true;
+
+		
+				player.setVelocity(0);
+			
+	
+		} else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+			play = true;
+
+		
+				player.setVelocity(0);
+			
+			 
+			
+		}
 	}
 
 	@Override
@@ -206,18 +223,19 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 	public void keyPressed(KeyEvent e) {
 		if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
 			play = true;
-			if (player.getVelocity() == 0)
-				player.addVelocity(8);
-			else {
-				player.addVelocity(4);
-			}
+
+		
+				player.setVelocity(4);
+			
+	
 		} else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
 			play = true;
-			if (player.getVelocity() == 0)
-				player.addVelocity(-8);
-			else {
-				player.addVelocity(-4);
-			}
+
+		
+				player.setVelocity(-4);
+			
+			 
+			
 		}
 
 		if (e.getKeyCode() == KeyEvent.VK_ENTER) {
@@ -241,6 +259,6 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 		}
 
 	}
-
-
+//milan was here
+// i trolled u
 }
